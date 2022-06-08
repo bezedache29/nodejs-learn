@@ -1,0 +1,47 @@
+# POST http://localhost:8000/api/user/register
+# Content-Type: application/json
+
+# {
+#     "name": "Ripley",
+#     "email": "ripley@gmail.com",
+#     "password": "password"
+# }
+
+# POST http://localhost:8000/api/user/login
+# Content-Type: application/json
+
+# {
+#     "email": "ripley@gmail.com",
+#     "password": "password"
+# }
+
+# POST http://localhost:8000/api/posts/new
+# Content-Type: application/json
+# auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI0ZjNhZGRkNzM2OWFjNzE2ZTE3NTkzIiwibmFtZSI6IlJpcGxleSIsImVtYWlsIjoicmlwbGV5QGdtYWlsLmNvbSJ9LCJpYXQiOjE2NDkzNTk3Njh9._kwnVKtDHjaE9CcUYsYeMsyE1M8ZRvtFW6k4Xl3plA0
+
+# {
+#     "title": "Mon super titre 2",
+#     "description": "Ma super description 2"
+# }
+
+# GET http://localhost:8000/api/posts/624f3d2fc88a24cad8f006b8
+
+# GET http://localhost:8000/api/posts/624f3d2fc88a24cad8f006b8/comments
+
+# GET http://localhost:8000/api/posts/624f3d2fc88a24cad8f006b8/comments/624f41adca86e7bad71b8dcd
+
+# POST http://localhost:8000/api/posts/624f3d2fc88a24cad8f006b8/comments
+# Content-Type: application/json
+# auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI0ZjNhZGRkNzM2OWFjNzE2ZTE3NTkzIiwibmFtZSI6IlJpcGxleSIsImVtYWlsIjoicmlwbGV5QGdtYWlsLmNvbSJ9LCJpYXQiOjE2NDkzNTk3Njh9._kwnVKtDHjaE9CcUYsYeMsyE1M8ZRvtFW6k4Xl3plA0
+
+# {
+#     "content": "Mon super commentaire 3"
+# }
+
+PUT http://localhost:8000/api/posts/624f3d2fc88a24cad8f006b8
+Content-Type: application/json
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI0ZjNhZGRkNzM2OWFjNzE2ZTE3NTkzIiwibmFtZSI6IlJpcGxleSIsImVtYWlsIjoicmlwbGV5QGdtYWlsLmNvbSJ9LCJpYXQiOjE2NDkzNTk3Njh9._kwnVKtDHjaE9CcUYsYeMsyE1M8ZRvtFW6k4Xl3plA0
+
+{
+    "title": "New title updated"
+}
